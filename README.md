@@ -1,4 +1,4 @@
-# 🏥 QueueCare – Hospital Queue & Wait-Time Prediction System
+# 🏥 Healthcare Queue Intelligence Wait Time Forecasting System
 
 A **production-style backend system** for managing **hospital patient queues** and predicting **expected wait times**.  
 The platform tracks real-time queue states, handles concurrent patient arrivals, calculates estimated waiting times, and exposes **human-readable queue status** through APIs.
