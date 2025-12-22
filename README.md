@@ -100,6 +100,7 @@ Patient Status API
 
 ## 📁 Project Structure
 
+```
 app/
 ├── main.py # Application entry point
 ├── routers/ # API routes (patient intake, status)
@@ -107,6 +108,7 @@ app/
 ├── database/ # Database connection & session
 ├── core/ # Configuration
 
+```
 ---
 
 ## 🚀 Getting Started
