@@ -1,0 +1,15 @@
+node_modules
+dist
+.DS_Store
+server/public
+vite.config.ts.*
+*.tar.gz
+
+# Replit / template (do not push)
+.replit
+replit.nix
+replit.config.js
+replit-env.d.ts
+
+# Local / agent state (do not push)
+.local
