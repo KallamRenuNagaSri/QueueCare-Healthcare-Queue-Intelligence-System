@@ -1,0 +1,227 @@
+Build a professional frontend for a hospital web application called **QueueCare**. The system is used by **hospital staff to manage patient queues and estimate waiting times**.
+
+Use **HTML, CSS, and JavaScript only** (no React, Angular, or frameworks). The frontend must work with a Flask backend.
+
+IMPORTANT DESIGN REQUIREMENTS:
+
+Use the same color theme as the QueueCare logo:
+Primary Blue: #2C7BE5
+Primary Green: #2FA84F
+Light Background: #F5F9FF
+White cards with soft shadows.
+
+Style should feel like **modern healthcare dashboard software** but still simple enough for a student project.
+
+Use **clean typography (Google Fonts: Poppins or Inter)**.
+
+Use **rounded cards, soft shadows, spacing, and modern UI design**.
+
+Create the following pages and structure:
+
+Project Structure:
+
+* templates/
+
+  * landing.html
+  * login.html
+  * dashboard.html
+* static/
+
+  * style.css
+  * script.js
+  * dashboard.js
+
+---
+
+PAGE 1 — LANDING PAGE (landing.html)
+
+This page introduces QueueCare.
+
+Sections:
+
+1. Header / Navigation bar
+   Left: QueueCare logo
+   Right: Links → Home, Features, Login
+
+2. Hero Section
+   Large title:
+   "QueueCare – Smart Hospital Queue Management"
+
+Subtitle:
+"Efficiently manage patient queues and waiting times with a simple hospital dashboard."
+
+Two buttons:
+
+* Login as Staff
+* Learn More
+
+Place a healthcare illustration or placeholder graphic on the right side.
+
+3. Features Section
+   Create three feature cards with icons:
+
+Feature 1:
+Patient Queue Tracking
+Monitor all patients waiting in different hospital departments.
+
+Feature 2:
+Smart Wait Time Estimation
+Automatically calculate estimated waiting time based on queue position.
+
+Feature 3:
+Department Queue Management
+Manage queues for Cardiology, Neurology, and General Medicine.
+
+Cards should have hover effects and subtle shadows.
+
+4. How It Works Section
+   Show 4 steps horizontally:
+
+5. Staff logs into QueueCare
+
+6. Patient is checked into a department
+
+7. System assigns queue position
+
+8. Estimated waiting time is calculated
+
+9. Footer
+   Text:
+   QueueCare – Hospital Queue Management System
+
+---
+
+PAGE 2 — LOGIN PAGE (login.html)
+
+Design a centered login card.
+
+Layout:
+Background: light blue gradient
+White login card with shadow.
+
+Login card fields:
+
+Title: Staff Login
+
+Email Input
+Password Input
+
+Login Button
+
+After clicking login, redirect user to:
+/dashboard
+
+---
+
+PAGE 3 — DASHBOARD (dashboard.html)
+
+Create a **hospital admin dashboard layout**.
+
+Left Side:
+Vertical sidebar navigation
+
+Sidebar items:
+Dashboard
+Add Patient
+View Queues
+Departments
+Logout
+
+Top Header:
+QueueCare Dashboard
+Small user avatar placeholder
+
+Main Dashboard Content:
+
+1. Statistics Cards (top section)
+
+Card 1:
+Patients Today
+
+Card 2:
+Patients Waiting
+
+Card 3:
+Active Departments
+
+Card 4:
+Average Wait Time
+
+Cards should be responsive and styled.
+
+2. Add Patient Section
+
+Form fields:
+Patient Name
+Department dropdown:
+
+* Cardiology
+* Neurology
+* General
+
+Button:
+Check In Patient
+
+When clicked, send POST request to:
+/checkin
+
+Body example:
+{
+"name": "Rahul",
+"department": "Cardiology"
+}
+
+3. Queue Display Section
+
+Buttons to view department queues:
+
+View Cardiology Queue
+View Neurology Queue
+View General Queue
+
+When clicked call:
+/queue/{department}
+
+Display patients in a table:
+
+Columns:
+Position
+Patient Name
+Patient ID
+
+4. Result Panel
+
+After adding a patient show:
+
+Patient ID
+Queue Position
+Estimated Wait Time
+
+---
+
+CSS REQUIREMENTS
+
+Use:
+
+* soft shadows
+* rounded cards
+* hover animations
+* professional spacing
+* responsive layout
+* blue/green healthcare color theme
+
+---
+
+JavaScript
+
+Use fetch() API to call backend routes:
+
+POST /checkin
+GET /queue/{department}
+
+Display results dynamically on the dashboard.
+
+---
+
+Goal:
+The UI should look like a **modern hospital management dashboard** but still simple and realistic for a student full-stack project.
