@@ -90,70 +90,13 @@ Patient Status API
 
 | Layer           | Technology            |
 | --------------- | -------------------- |
-| Backend         | Python (FastAPI)      |
+| Backend         | Node.js
 | Database        | PostgreSQL            |
 | API Style       | REST                  |
-| Concurrency     | Database transactions |
-| Deployment      | Docker                |
 
 ---
 
-## 📁 Project Structure
 
-```
-app/
-├── main.py # Application entry point
-├── routers/ # API routes (patient intake, status)
-├── schemas/ # Request/response validation
-├── database/ # Database connection & session
-├── core/ # Configuration
-
-```
----
-
-## 🚀 Getting Started
-
-### 1️⃣ Clone the Repository
-
-```bash
-git clone https://github.com/<your-username>/queuecare.git
-cd queuecare
-```
-
-### 2️⃣ Create Virtual Environment
-
-```
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
-```
-
-### 3️⃣ Install Dependencies
-
-```
-pip install -r requirements.txt
-```
-
-### 4️⃣ Run the Backend
-
-```
-uvicorn app.main:app --reload
-```
-
----
-## 📊 Sample API Output
-
-```json
-{
-  "patient_id": "P12345",
-  "department": "Cardiology",
-  "queue_position": 3,
-  "estimated_wait_time": "00:25:00",
-  "status": "waiting"
-}
-```
-
----
 
 ## 🧪 Use Cases
 
