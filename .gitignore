@@ -1,0 +1,55 @@
+# ── Dependencies ─────────────────────────────────────────────────
+node_modules/
+
+# ── Build output ─────────────────────────────────────────────────
+dist/
+
+# ── Environment variables — NEVER commit these ───────────────────
+.env
+.env.local
+.env.*.local
+
+# ── TypeScript incremental build cache ───────────────────────────
+*.tsbuildinfo
+node_modules/typescript/tsbuildinfo
+
+# ── Logs ─────────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ── OS junk ──────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Editor / IDE ─────────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ── Irrelevant leftover files ─────────────────────────────────────
+requirements.txt
+client/requirements.md
+
+# ── Vite generated config variants ───────────────────────────────
+vite.config.ts.*
+
+# ── Archives ─────────────────────────────────────────────────────
+*.tar.gz
+*.zip
+
+# ── Replit / template artefacts ──────────────────────────────────
+.replit
+replit.nix
+replit.config.js
+replit-env.d.ts
+
+# ── Local / agent state ───────────────────────────────────────────
+.local
+server/public

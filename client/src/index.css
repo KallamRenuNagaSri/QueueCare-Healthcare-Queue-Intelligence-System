@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 216 100% 98%; /* #F5F9FF - Light Background */
+    --foreground: 222 47% 11%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    
+    --primary: 214 80% 53%; /* #2C7BE5 - Primary Blue */
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 214 32% 96%;
+    --secondary-foreground: 214 80% 53%;
+    
+    --muted: 214 32% 94%;
+    --muted-foreground: 215 16% 47%;
+    
+    --accent: 136 56% 42%; /* #2FA84F - Primary Green */
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 214 80% 53%;
+    
+    --radius: 1rem;
+    --font-sans: 'Poppins', sans-serif;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .shadow-soft {
+    box-shadow: 0 10px 40px -10px rgba(44, 123, 229, 0.08);
+  }
+  .shadow-soft-lg {
+    box-shadow: 0 20px 60px -15px rgba(44, 123, 229, 0.12);
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+  }
+  .bg-gradient-primary {
+    @apply bg-gradient-to-br from-primary to-blue-600;
+  }
+}
